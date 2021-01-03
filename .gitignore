@@ -1,0 +1,16 @@
+# Build output
+addons/*.pbo
+
+# Releases
+releases/*
+hemtt
+hemtt.exe
+symbols/*
+
+# Bikey
+*.biprivatekey
+
+## Added by HEMTT
+keys/*
+.hemtt/local
+####

@@ -1,0 +1,26 @@
+name = "Task Force ArmaForces"
+prefix = "tfaf"
+author = "ArmaForces"
+template = "cba"
+mainprefix = "z"
+folder_optionals = true
+sig_version = 3
+
+modname = "armaforces_tfaf"
+
+files = [
+    "LICENSE",
+    "mod.cpp",
+    "README.md"
+]
+
+exclude = ["*.psd", "*.png", "*.tga"]
+
+releasebuild = [
+    "!Set_version",
+    "@zip",
+    "!publish"
+]
+
+[header_exts]
+version = "{{git \"id 8\"}}"
