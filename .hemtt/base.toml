@@ -19,8 +19,23 @@ exclude = ["*.psd", "*.png", "*.tga"]
 releasebuild = [
     "!Set_version",
     "@zip",
-    "!publish"
+    "!Publish"
 ]
 
 [header_exts]
 version = "{{git \"id 8\"}}"
+
+[scripts.Set_version]
+    steps_windows = [
+        "powershell ./tools/Set-Version.ps1 {{version}} '@armaforces_tfaf'"
+    ]
+    steps_linux = [
+        "sed -i 's/0.0.0/{{version}}/' ./releases/{{version}}/@armaforces_tfaf/mod.cpp"
+    ]
+    # show_output = true
+
+[scripts.Publish]
+    steps_windows = [
+        "powershell ./tools/Publish.ps1 {{version}} 1934142795 '@armaforces_tfaf'"
+    ]
+    show_output = true
