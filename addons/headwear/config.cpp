@@ -4,7 +4,11 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {};
-        weapons[] = {};
+        weapons[] = {
+            QGVAR(Cap_headphones_BlackLogo),
+            QGVAR(Cap_BlackLogo),
+            QGVAR(Cap_TanLogo)
+        };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "tfaf_main"
