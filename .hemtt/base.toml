@@ -36,6 +36,6 @@ version = "{{git \"id 8\"}}"
 
 [scripts.Publish]
     steps_windows = [
-        "powershell ./tools/Publish.ps1 {{version}} 1934142795 '@armaforces_tfaf'"
+        "powershell ./tools/Publish.ps1 {{version}} 2348821663 '@armaforces_tfaf'"
     ]
     show_output = true
