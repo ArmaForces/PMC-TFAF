@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="TFAF">
+    <Package name="Headgear">
+        <Key ID="STR_TFAF_Headgear_Cap_Headphones_BlackLogo">
+            <English>Cap Headphones (Black) Logo</English>
+            <German>Kappe, Kopfhöhrer (Schwarz) Logo</German>
+            <Japanese>ヘッドホン付き帽子 (黒) ロゴ</Japanese>
+            <French>Casquette écouteurs (Noir) Logo</French>
+        </Key>
+    </Package>
+</Project
